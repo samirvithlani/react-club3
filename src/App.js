@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import { First } from './First';
+import { Header } from './components/Header';
+import Footer from './components/Footer';
+import { Users } from './components/Users';
+//jsx
 
 function App() {
-  return (
+
+var name = "Royal TechnoSoft Pvt. Ltd.";
+var age = 20;
+var isMarried = false;
+
+var address = {
+  country:"India",
+  city: "Pune",
+  state: "Maharashtra",
+  area:"Kharadi",
+  pin:411045
+}
+
+var userName = "Raj"
+  return ( 
+     
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header uName = {userName}/> 
+      <Users/>     
+      <Footer address = {address}/>
     </div>
   );
 }
