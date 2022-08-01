@@ -4,6 +4,8 @@ import { First } from './First';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
 import { Users } from './components/Users';
+import { AddBugs } from './bug/AddBugs';
+import { RegisterBug } from './bug/RegisterBug';
 //jsx
 
 function App() {
@@ -25,7 +27,7 @@ var userName = "Raj"
      
     <div className="App">
       <Header uName = {userName}/> 
-      <Users/>     
+      <RegisterBug/>     
       <Footer address = {address}/>
     </div>
   );
