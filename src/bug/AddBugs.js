@@ -1,37 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { BugForm } from './BugForm'
 import { ListBugs } from './ListBugs'
 
+
 export const AddBugs = () => {
-    var bugs = [
+    
+    var [bugs, setbugs] = useState(
+     [
         {
             id: 1,
             title: 'Bug 1',
             description: 'Bug 1 description',
             status: 'New',
             isActive:true
-        },
-        {
-            id: 2,
-            title: 'Login issue',
-            description: 'Login is not working',
-            status: 'Pending',
-            isActive:true
-        },
-        {
-            id: 3,
-            title: 'Signup Issue',
-            description: 'Signup is not working',
-            status: 'Old',
-            isActive:false
         }
-    ]
+       
+    ])
+    const insertBug =(bug)=>{
+        console.log("insert bug....")
+        console.log(bug)
+        //spread operator.//push.
+        setbugs([...bugs,bug])
+
+    }
     const deleteBug =(bug)=>{
-        bugs = bugs.filter(b=>b.id!==bug.id)
+        console.log(bug)
+        bugs = bugs.filter(bugs=>{return bugs.id!==bug.id})
+        setbugs(bugs)
         
     }
   return (
     <div>
-
+        <BugForm insertBug = {insertBug}/>
         <ListBugs bugs = {bugs} deleteBug = {deleteBug}/>
     </div>
   )

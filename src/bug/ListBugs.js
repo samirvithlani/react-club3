@@ -14,6 +14,7 @@ export const ListBugs = (props) => {
             <th scope="col">Action</th>
           </tr>
         </thead>
+
         <tbody>
           {props.bugs.map((bug) => {
             return (
@@ -24,7 +25,14 @@ export const ListBugs = (props) => {
                 <td>{bug.status}</td>
                 <td>{bug.isActive ? "Active" : "Inactive"}</td>
                 <td>
-                    <button className="btn btn-danger" onClick={()=>{props.deleteBug(bug)}}>Delete</button>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => {
+                      props.deleteBug(bug);
+                    }}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             );

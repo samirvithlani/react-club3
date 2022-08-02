@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { Users } from './components/Users';
 import { AddBugs } from './bug/AddBugs';
 import { RegisterBug } from './bug/RegisterBug';
+import { BugForm } from './bug/BugForm';
 //jsx
 
 function App() {
@@ -27,7 +28,8 @@ var userName = "Raj"
      
     <div className="App">
       <Header uName = {userName}/> 
-      <RegisterBug/>     
+      
+      <AddBugs/> 
       <Footer address = {address}/>
     </div>
   );
