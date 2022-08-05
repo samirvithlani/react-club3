@@ -7,6 +7,7 @@ import { Users } from './components/Users';
 import { AddBugs } from './bug/AddBugs';
 import { RegisterBug } from './bug/RegisterBug';
 import { BugForm } from './bug/BugForm';
+import { StudentRegistration } from './components/StudentRegistration';
 //jsx
 
 function App() {
@@ -29,7 +30,7 @@ var userName = "Raj"
     <div className="App">
       <Header uName = {userName}/> 
       
-      <AddBugs/> 
+      <StudentRegistration/>
       <Footer address = {address}/>
     </div>
   );
