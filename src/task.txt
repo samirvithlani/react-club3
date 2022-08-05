@@ -1,0 +1,10 @@
+Task:
+password min max len
+phone no 
+email valid email
+age > 18
+
+--------------------------------------------------
+
+constraint valid --> submit disable
+
