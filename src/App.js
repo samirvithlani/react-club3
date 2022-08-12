@@ -8,7 +8,16 @@ import { AddBugs } from './bug/AddBugs';
 import { RegisterBug } from './bug/RegisterBug';
 import { BugForm } from './bug/BugForm';
 import { StudentRegistration } from './components/StudentRegistration';
+import { Navbar } from './components/Navbar';
 //jsx
+import {Route, Routers, Routes} from 'react-router-dom';
+import { AboutUs } from './components/AboutUs';
+import { ContactUs } from './components/ContactUs';
+import { Blog } from './components/Blog';
+import { ContactDetail } from './components/ContactDetail';
+import { SubBlog } from './components/SubBlog';
+import { Products } from './components/Products';
+import { ProductDetail } from './components/ProductDetail';
 
 function App() {
 
@@ -28,10 +37,21 @@ var userName = "Raj"
   return ( 
      
     <div className="App">
-      <Header uName = {userName}/> 
+      {/* <Header uName = {userName}/> 
       
       <StudentRegistration/>
-      <Footer address = {address}/>
+      <Footer address = {address}/> */}
+      <Navbar/>
+      <Routes>
+        <Route path='/aboutus' element={<AboutUs/>}></Route>
+        <Route path='/contactus' element={<ContactUs/>}></Route>
+        <Route path ="/blog" element={<Blog/>}></Route>
+        <Route path = "/contactdetail/:id" element={<ContactDetail/>}></Route>
+        <Route path='/subblog' element={<SubBlog/>}></Route>
+        <Route path = "/products" element = {<Products/>}></Route>
+        <Route path = "/productdetail/:id" element = {<ProductDetail/>}></Route>
+      </Routes>
+      
     </div>
   );
 }
