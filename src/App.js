@@ -18,6 +18,7 @@ import { ContactDetail } from './components/ContactDetail';
 import { SubBlog } from './components/SubBlog';
 import { Products } from './components/Products';
 import { ProductDetail } from './components/ProductDetail';
+import { UserApiDemo } from './api/UserApiDemo';
 
 function App() {
 
@@ -41,7 +42,8 @@ var userName = "Raj"
       
       <StudentRegistration/>
       <Footer address = {address}/> */}
-      <Navbar/>
+      {/* <Navbar/> */}
+      <UserApiDemo/>
       <Routes>
         <Route path='/aboutus' element={<AboutUs/>}></Route>
         <Route path='/contactus' element={<ContactUs/>}></Route>
