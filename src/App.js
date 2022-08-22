@@ -19,6 +19,7 @@ import { SubBlog } from './components/SubBlog';
 import { Products } from './components/Products';
 import { ProductDetail } from './components/ProductDetail';
 import { UserApiDemo } from './api/UserApiDemo';
+import { RecipeAPi } from './api/RecipeAPi';
 
 function App() {
 
@@ -43,7 +44,8 @@ var userName = "Raj"
       <StudentRegistration/>
       <Footer address = {address}/> */}
       {/* <Navbar/> */}
-      <UserApiDemo/>
+      {/* <UserApiDemo/> */}
+      <RecipeAPi/>
       <Routes>
         <Route path='/aboutus' element={<AboutUs/>}></Route>
         <Route path='/contactus' element={<ContactUs/>}></Route>
