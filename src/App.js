@@ -20,6 +20,7 @@ import { Products } from './components/Products';
 import { ProductDetail } from './components/ProductDetail';
 import { UserApiDemo } from './api/UserApiDemo';
 import { RecipeAPi } from './api/RecipeAPi';
+import { ViewTutorials } from './crud/ViewTutorials';
 
 function App() {
 
@@ -45,7 +46,7 @@ var userName = "Raj"
       <Footer address = {address}/> */}
       {/* <Navbar/> */}
       {/* <UserApiDemo/> */}
-      <RecipeAPi/>
+      <ViewTutorials/>
       <Routes>
         <Route path='/aboutus' element={<AboutUs/>}></Route>
         <Route path='/contactus' element={<ContactUs/>}></Route>
