@@ -8,7 +8,7 @@ import { AddBugs } from './bug/AddBugs';
 import { RegisterBug } from './bug/RegisterBug';
 import { BugForm } from './bug/BugForm';
 import { StudentRegistration } from './components/StudentRegistration';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './crud/Navbar';
 //jsx
 import {Route, Routers, Routes} from 'react-router-dom';
 import { AboutUs } from './components/AboutUs';
@@ -21,6 +21,10 @@ import { ProductDetail } from './components/ProductDetail';
 import { UserApiDemo } from './api/UserApiDemo';
 import { RecipeAPi } from './api/RecipeAPi';
 import { ViewTutorials } from './crud/ViewTutorials';
+import { UpdateTutorail } from './crud/UpdateTutorail';
+import { AddTutorial } from './crud/AddTutorial';
+import { StorageDemo } from './storage/StorageDemo';
+import { GetStoreData } from './storage/GetStoreData';
 
 function App() {
 
@@ -46,7 +50,10 @@ var userName = "Raj"
       <Footer address = {address}/> */}
       {/* <Navbar/> */}
       {/* <UserApiDemo/> */}
-      <ViewTutorials/>
+      
+      <StorageDemo/>
+      <GetStoreData/>
+      <Navbar/>
       <Routes>
         <Route path='/aboutus' element={<AboutUs/>}></Route>
         <Route path='/contactus' element={<ContactUs/>}></Route>
@@ -55,6 +62,9 @@ var userName = "Raj"
         <Route path='/subblog' element={<SubBlog/>}></Route>
         <Route path = "/products" element = {<Products/>}></Route>
         <Route path = "/productdetail/:id" element = {<ProductDetail/>}></Route>
+        <Route path='/updatutorial/:id' element = {<UpdateTutorail/>}></Route>
+        <Route path='/viewtutorials' element = {<ViewTutorials/>}></Route>
+        <Route path='/addtutorial' element = {<AddTutorial/>}></Route>
       </Routes>
       
     </div>

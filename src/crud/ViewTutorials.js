@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export const ViewTutorials = () => {
     const [tutorials, settutorials] = useState([])
@@ -60,7 +61,9 @@ export const ViewTutorials = () => {
                     <td>{tut.fees}</td>
                     <td>
                         <button className='btn btn-danger' onClick={()=>{deleteTutorial(tut.id)}}>DELETE</button>
+                        <Link  to = {`/updatutorial/${tut.id}`} className='btn btn-primary'>UPDATE</Link>
                     </td>
+                    
                 </tr>
             )
         })
