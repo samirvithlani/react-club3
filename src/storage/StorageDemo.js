@@ -18,6 +18,7 @@ export const StorageDemo = () => {
     }
   return (
     <div>
+        <h1>LOGIN components</h1>
         <button onClick={storeData}>Store Data</button>
         <button onClick={removeData}>Remove Data</button>
     </div>

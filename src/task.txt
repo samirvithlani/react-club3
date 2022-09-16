@@ -8,3 +8,12 @@ age > 18
 
 constraint valid --> submit disable
 
+0---------------
+
+if user loggedin thn only show logout button
+ADD
+LIST
+DELETE
+UPDATE
+loggedin
+LOGOUT
