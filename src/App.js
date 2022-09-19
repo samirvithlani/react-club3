@@ -27,6 +27,7 @@ import { StorageDemo } from "./storage/StorageDemo";
 import { GetStoreData } from "./storage/GetStoreData";
 import { Json } from "./context/Json";
 import ProtectedRoutes from "./ProtectedRoutes";
+import { MaterialDemo1 } from "./material/MaterialDemo1";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -64,6 +65,7 @@ function App() {
         <Route path="/products" element={<Products />}></Route>
         <Route path="/productdetail/:id" element={<ProductDetail />}></Route>
         <Route path="/updatutorial/:id" element={<UpdateTutorail />}></Route>
+        <Route path = "/material1" element = {<MaterialDemo1/>}></Route>
         <Route element={<ProtectedRoutes />}>
           <Route path="/viewtutorials" element={<ViewTutorials />}></Route>
           <Route path="/addtutorial" element={<AddTutorial />}></Route>
