@@ -28,6 +28,7 @@ import { GetStoreData } from "./storage/GetStoreData";
 import { Json } from "./context/Json";
 import ProtectedRoutes from "./ProtectedRoutes";
 import { MaterialDemo1 } from "./material/MaterialDemo1";
+import Login from "./material/Login";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -54,7 +55,7 @@ function App() {
 
       {/* <StorageDemo/>
       <GetStoreData/> */}
-      <Navbar />
+      <Login/>
       {/* <Json/> */}
       <Routes>
         <Route path="/aboutus" element={<AboutUs />}></Route>
