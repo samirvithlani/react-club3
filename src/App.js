@@ -30,6 +30,10 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import { MaterialDemo1 } from "./material/MaterialDemo1";
 import Login from "./material/Login";
 import { Task } from "./material/Task";
+import { SliderDemo } from "./material/SliderDemo";
+import { MuiTable } from "./material/MuiTable";
+import { DataGrid } from '@mui/x-data-grid';
+import { UserComponent } from "./query/UserComponent";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -56,7 +60,7 @@ function App() {
 
       {/* <StorageDemo/>
       <GetStoreData/> */}
-      <Task/>
+      <UserComponent/>
 
       {/* <Json/> */}
       <Routes>
