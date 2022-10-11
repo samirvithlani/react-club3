@@ -1,13 +1,32 @@
 import axios from "axios"
-import { useQuery } from "react-query"
+import { useMutation, useQuery } from "react-query"
 
 
 function fetchUserData() {
 
-    return axios.get('http://localhost:8080/tutorial')
+    return axios.get('https://tutorialapi1.herokuapp.com/tutorial')
 }
 
 
+function addUserData(data) {
+
+    console.log(data)
+    return axios.post('https://reqres.in/api/users',data)
+}
+
+export const useAddData = () => {
+
+        console.log("useAddData")
+    return useMutation(addUserData,{
+        onSuccess: () => {
+            //fetch response here
+            
+        },
+        onError: () => {
+            //fetch error here if
+        }
+    })
+}
 
 export const useFetchData = () => {
 
