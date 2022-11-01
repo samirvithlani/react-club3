@@ -34,6 +34,8 @@ import { SliderDemo } from "./material/SliderDemo";
 import { MuiTable } from "./material/MuiTable";
 import { DataGrid } from '@mui/x-data-grid';
 import { UserComponent } from "./query/UserComponent";
+import { Employees } from "./backupxontex/Employees";
+import { MuiTable1 } from "./material/MuiTable1";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -60,7 +62,7 @@ function App() {
 
       {/* <StorageDemo/>
       <GetStoreData/> */}
-      <UserComponent/>
+      <MuiTable1/>
 
       {/* <Json/> */}
       <Routes>
