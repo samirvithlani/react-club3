@@ -3,7 +3,7 @@ import "./App.css";
 import { First } from "./First";
 import { Header } from "./components/Header";
 import Footer from "./components/Footer";
-import { Users } from "./components/Users";
+
 import { AddBugs } from "./bug/AddBugs";
 import { RegisterBug } from "./bug/RegisterBug";
 import { BugForm } from "./bug/BugForm";
@@ -36,6 +36,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import { UserComponent } from "./query/UserComponent";
 import { Employees } from "./backupxontex/Employees";
 import { MuiTable1 } from "./material/MuiTable1";
+import { Users } from "./querybackup/Users";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -62,7 +63,7 @@ function App() {
 
       {/* <StorageDemo/>
       <GetStoreData/> */}
-      <MuiTable1/>
+      <Users/>
 
       {/* <Json/> */}
       <Routes>
