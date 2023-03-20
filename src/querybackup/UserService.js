@@ -1,5 +1,7 @@
 import axios from "axios"
-import { useQuery } from "react-query"
+import { useMutation, useQuery } from "react-query"
+import { useNavigate } from "react-router-dom"
+
 
 const fetchUserDta = ()=>{
     return axios.get("http://localhost:8000/users/user/")
@@ -12,4 +14,25 @@ export const useFetchUserData = () =>{
         refetchOnMount:false,
         enabled:false,
     })
+}
+
+const addUserData = (data)=>{
+
+    return axios.post("http://localhost:8000/users/user/",data)
+}
+
+export const useAddUserData = () =>{
+
+        var navigate = useNavigate()
+        return useMutation(addUserData,{
+            onSuccess:(data)=>{
+                console.log("res -->",data.data)
+                navigate("/aboutus")
+            },
+            onError:(err)=>{
+                console.log("error -->",err)
+            }
+        })
+
+
 }
