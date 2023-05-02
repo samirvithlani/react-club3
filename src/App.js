@@ -39,6 +39,7 @@ import { MuiTable1 } from "./material/MuiTable1";
 import { Users } from "./querybackup/Users";
 import { AddUsers } from "./querybackup/AddUsers";
 import { Employee } from "./querrymeet/Employee";
+import { FileUploder } from "./FileUploder";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -56,7 +57,8 @@ function App() {
   var userName = "Raj";
   return (
     <div className="App">
-      <Employee/>
+      {/* <Employee/> */}
+      <FileUploder/>
       {/* <Header uName = {userName}/> 
       
       <StudentRegistration/>
