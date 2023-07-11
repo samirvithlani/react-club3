@@ -36,10 +36,12 @@ import { DataGrid } from '@mui/x-data-grid';
 import { UserComponent } from "./query/UserComponent";
 import { Employees } from "./backupxontex/Employees";
 import { MuiTable1 } from "./material/MuiTable1";
-import { Users } from "./querybackup/Users";
+import { Users } from "./backup/Users";
 import { AddUsers } from "./querybackup/AddUsers";
 import { Employee } from "./querrymeet/Employee";
 import { FileUploder } from "./FileUploder";
+import { DynamicForm } from "./DynamicForm";
+import { AddUser } from "./backup/AddUser";
 
 function App() {
   var name = "Royal TechnoSoft Pvt. Ltd.";
@@ -58,7 +60,9 @@ function App() {
   return (
     <div className="App">
       {/* <Employee/> */}
-      <FileUploder/>
+      {/* <FileUploder/> */}
+      {/* <DynamicForm/> */}
+
       {/* <Header uName = {userName}/> 
       
       <StudentRegistration/>
@@ -68,7 +72,7 @@ function App() {
 
       {/* <StorageDemo/>
       <GetStoreData/> */}
-      <AddUsers/>
+      {/* <AddUsers/> */}
 
       {/* <Json/> */}
       <Routes>
@@ -81,6 +85,8 @@ function App() {
         <Route path="/productdetail/:id" element={<ProductDetail />}></Route>
         <Route path="/updatutorial/:id" element={<UpdateTutorail />}></Route>
         <Route path = "/material1" element = {<MaterialDemo1/>}></Route>
+        <Route path="/backup/users" element = {<Users/>}></Route>
+        <Route path="/backup/adduser" element = {<AddUser/>}></Route>
         <Route element={<ProtectedRoutes />}>
           <Route path="/viewtutorials" element={<ViewTutorials />}></Route>
           <Route path="/addtutorial" element={<AddTutorial />}></Route>
