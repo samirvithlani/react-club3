@@ -40,7 +40,7 @@ import { Users } from "./backup/Users";
 import { AddUsers } from "./querybackup/AddUsers";
 import { Employee } from "./querrymeet/Employee";
 import { FileUploder } from "./FileUploder";
-import { DynamicForm } from "./DynamicForm";
+import { DynamicForm } from "./backup/DynamicForm";
 import { AddUser } from "./backup/AddUser";
 
 function App() {
@@ -75,6 +75,7 @@ function App() {
       {/* <AddUsers/> */}
 
       {/* <Json/> */}
+      <DynamicForm/>
       <Routes>
         <Route path="/aboutus" element={<AboutUs />}></Route>
         <Route path="/contactus" element={<ContactUs />}></Route>
